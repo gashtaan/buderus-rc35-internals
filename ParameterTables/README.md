@@ -1,5 +1,15 @@
 # Parameter tables
 
+Devices connected to common EMS bus communicate with each other by exchanging various parameter tables encapsulated in **telegrams**.
+
+Some tables belongs to **local** RC35 controller itself, other belongs to some **external** device and some are **shared** between multiple devices and broadcasted to others when device make changes in them to every device have the most recent data.
+
+Optional number in column **interval** in the following table indicate that device is actively broadcasting/querying parameter table to/from other devices in specified time intervals (in seconds).
+
+Tables marked as **persistent** have their parameters (in addition to RAM) backed also in built-in EEPROM memory to make them survive a restart or power outage.
+
+> These parameter tables can be viewed/edited in hidden technician menu built into RC35 unit. It is accesible from Service/Diagnosis/Versions menu by pushing TEMP, INFO and TIME buttons at the same time and while keeping them pushed down, rotating the knob clockwise at least five times.
+
 | Index | Owner | Data Type | Bus Device | Interval | Persistent |
 |-------|-------|-----------|-------------|----------|------------|
 | [0](#parameter-table-0) | external | 07 | MC10 (8) | 180 | no |

@@ -132,15 +132,15 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 ## Parameter table 1
 | Index | Size | Description |
 |-------|------|-------------|
-| 0 | 1 ||
-| 1 | 1 ||
-| 2 | 1 ||
-| 3 | 1 ||
-| 4 | 1 ||
-| 5 | 1 ||
+| 0 | 1 | Control unit type:<br/>48 - MC10<br/>54 - DBA<br/>5F - UBA-H3<br/>73 - UBA3.5<br/>79 - MCM10<br/>7B - UBA4/EMS |
+| 1 | 1 | MC10 version major |
+| 2 | 1 | MC10 version minor |
+| 3 | 1 | Burner module type:<br/>76 - MC10/BRM10<br/>other - SAFe |
+| 4 | 1 | Burner module version major |
+| 5 | 1 | Burner module version minor |
 | 6 | 1 ||
-| 7 | 1 ||
-| 8 | 1 ||
+| 7 | 1 | UM10 version major |
+| 8 | 1 | UM10 version minor |
 | 9 | 1 ||
 ## Parameter table 2
 | Index | Size | Description |

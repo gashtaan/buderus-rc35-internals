@@ -145,32 +145,32 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 ## Parameter table 2
 | Index | Size | Description |
 |-------|------|-------------|
-| 0 | 2 ||
-| 1 | 1 ||
-| 2 | 1 ||
-| 3 | 1 ||
-| 4 | 1 ||
+| 0 | 2 | KIM number |
+| 1 | 1 | KIM version |
+| 2 | 1 | Flags |
+| 3 | 1 | Boiler maximum output (kW) low byte  |
+| 4 | 1 | Boiler minimum output (%) |
 | 5 | 1 ||
 | 6 | 1 ||
-| 7 | 1 ||
+| 7 | 1 | Minimum ON temperature |
 | 8 | 1 ||
 | 9 | 1 ||
 | 10 | 1 ||
-| 11 | 1 ||
+| 11 | 1 | Boiler maximum output (kW) high byte |
 | 12 | 1 ||
-| 13 | 1 ||
-| 14 | 1 ||
+| 13 | 1 | Flags |
+| 14 | 1 | Flags |
 | 15 | 1 ||
 | 16 | 1 ||
 | 17 | 2 ||
-| 18 | 1 ||
+| 18 | 1 | flags |
 ## Parameter table 3
 | Index | Size | Description |
 |-------|------|-------------|
-| 0 | 1 ||
-| 1 | 1 ||
-| 2 | 1 ||
-| 3 | 1 ||
+| 0 | 1 | Boiler temperature target |
+| 1 | 1 | Boiler HC power target |
+| 2 | 1 | Boiler DHW power target |
+| 3 | 1 | 00/FF - Signal to boiler that heating will be needed soon<br/>If feature is enabled and how much time ahead is boiler signaled is configurable by parameter 105/8. |
 ## Parameter table 4
 | Index | Size | Description |
 |-------|------|-------------|
@@ -310,31 +310,31 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 ## Parameter table 6
 | Index | Size | Min | Max | Default | Description |
 |-------|------|-----|-----|---------|-------------|
-| 0 | 1 | 0 | 8 | 0 ||
-| 1 | 1 | -1 | 0 | -1 ||
-| 2 | 1 | 30 | 80 | 60 ||
+| 0 | 1 | 0 | 8 | 0 | DHW system enabled |
+| 1 | 1 | -1 | 0 | -1 | DHW system installed |
+| 2 | 1 | 30 | 80 | 60 | DHW desired temperature |
 | 3 | 1 | -20 | -2 | -5 ||
 | 4 | 1 | -1 | 0 | -1 ||
 | 5 | 1 | 0 | 40 | 40 ||
-| 6 | 1 | -1 | 0 | -1 ||
-| 7 | 1 | 1 | 7 | 2 ||
-| 8 | 1 | 60 | 80 | 70 ||
+| 6 | 1 | -1 | 0 | -1 | Circulation pump installed |
+| 7 | 1 | 1 | 7 | 2 | Circulation pump switch ON frequency (per hour) |
+| 8 | 1 | 60 | 80 | 70 | DHW disinfection temperature |
 | 9 | 1 | -40 | 0 | 0 ||
 | 10 | 1 | -1 | 0 | -1 ||
 ## Parameter table 7
 | Index | Size | Description |
 |-------|------|-------------|
-| 0 | 1 ||
-| 1 | 1 ||
+| 0 | 1 | DHW flags:<br/>bit 0 - enabled<br/>bit 1 - single charge started<br/>bit 2 - disinfection started<br/>bit 4 - day mode<br/>bit 5 - single charge active<br/>bit 6 - disinfection active |
+| 1 | 1 | Circulation pump flags |
 ## Parameter table 8
 | Index | Size | Description |
 |-------|------|-------------|
-| 0 | 1 ||
-| 1 | 2 ||
+| 0 | 1 | DHW target temperature |
+| 1 | 2 | DHW measured temperature |
 | 2 | 2 ||
-| 3 | 1 ||
-| 4 | 1 ||
-| 5 | 1 ||
+| 3 | 1 | DHW flags |
+| 4 | 1 | DHW error flags:<br/>bit 0 - sensor 1 is defect<br/>bit 1 - sensor 2 is defect<br/>bit 2 - water stays cold<br/>bit 3 - disinfection was unsuccessful |
+| 5 | 1 | Circulation pump flags |
 | 6 | 1 ||
 | 7 | 1 ||
 | 8 | 3 ||

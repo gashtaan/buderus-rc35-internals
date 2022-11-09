@@ -324,15 +324,15 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 ## Parameter table 7
 | Index | Size | Description |
 |-------|------|-------------|
-| 0 | 1 | DHW flags:<br/>bit 0 - enabled<br/>bit 1 - single charge started<br/>bit 2 - disinfection started<br/>bit 4 - day mode<br/>bit 5 - single charge active<br/>bit 6 - disinfection active |
-| 1 | 1 | Circulation pump flags |
+| 0 | 1 | DHW flags:<br/>bit 0 - enabled<br/>bit 1 - single charge active (reset by boiler when stopped)<br/>bit 2 - disinfection active (reset by boiler when stopped)<br/>bit 4 - day mode<br/>bit 5 - single charge requested (reset by unit when request is cancelled)<br/>bit 6 - disinfection requested |
+| 1 | 1 | Circulation pump flags:<br/>bit 0 - enabled<br/>bit 1 - circulation active (reset by boiler when stopped)<br/>bit 4 - day mode<br/>bit 5 - circulation requested  |
 ## Parameter table 8
 | Index | Size | Description |
 |-------|------|-------------|
 | 0 | 1 | DHW target temperature |
 | 1 | 2 | DHW measured temperature |
 | 2 | 2 ||
-| 3 | 1 | DHW flags |
+| 3 | 1 | DHW flags:<br/>bit 0 - day mode<br/>bit 1 - single charge in progress |
 | 4 | 1 | DHW error flags:<br/>bit 0 - sensor 1 is defect<br/>bit 1 - sensor 2 is defect<br/>bit 2 - water stays cold<br/>bit 3 - disinfection was unsuccessful |
 | 5 | 1 | Circulation pump flags |
 | 6 | 1 ||

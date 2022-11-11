@@ -947,9 +947,9 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 ## Parameter table 70
 | Index | Size | Description |
 |-------|------|-------------|
-| 0 | 1 ||
-| 1 | 1 ||
-| 2 | 1 ||
+| 0 | 1 | Programming unit type |
+| 1 | 1 | Programming unit version major |
+| 2 | 1 | Programming unit ersion minor |
 ## Parameter table 71
 | Index | Size | Description |
 |-------|------|-------------|
@@ -983,27 +983,27 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 ## Parameter table 72
 | Index | Size | Min | Max | Default | Description |
 |-------|------|-----|-----|---------|-------------|
-| 0 | 1 | -1 | 0 | 0 ||
-| 1 | 1 | -1 | 0 | 0 ||
-| 2 | 1 | 0 | 2 | 2 ||
-| 3 | 1 | 0 | 2 | 2 ||
-| 4 | 1 | -1 | 0 | 0 ||
-| 5 | 1 | 0 | 7 | 1 ||
-| 6 | 1 | 0 | 23 | 1 ||
+| 0 | 1 | -1 | 0 | 0 | DHW program: -1 own program, 0 - as HC |
+| 1 | 1 | -1 | 0 | 0 | Circulation program: -1 own program, 0 - as HC |
+| 2 | 1 | 0 | 2 | 2 | DHW operation mode |
+| 3 | 1 | 0 | 2 | 2 | Circulation operation mode |
+| 4 | 1 | -1 | 0 | 0 | DHW disinfection enabled |
+| 5 | 1 | 0 | 7 | 1 | DHW disinfection weekday|
+| 6 | 1 | 0 | 23 | 1 | DHW disinfection hour|
 | 7 | 1 | -1 | 0 | 0 ||
-| 8 | 1 | 60 | 80 | 60 ||
-| 9 | 1 | -1 | 0 | -1 ||
+| 8 | 1 | 60 | 80 | 60 | DHW maximum temperature |
+| 9 | 1 | -1 | 0 | -1 | DHW single charge enabled |
 ## Parameter table 73
 | Index | Size | Description |
 |-------|------|-------------|
-| 0 | 1 ||
-| 1 | 1 ||
-| 2 | 1 ||
-| 3 | 1 ||
-| 4 | 1 ||
-| 5 | 1 ||
-| 6 | 1 ||
-| 7 | 1 ||
+| 0 | 1 | Current date / year |
+| 1 | 1 | Current date / month |
+| 2 | 1 | Current time / hour |
+| 3 | 1 | Current date / day |
+| 4 | 1 | Current time / minute |
+| 5 | 1 | Current time / second |
+| 6 | 1 | Current date / weekday |
+| 7 | 1 | Flags:<br/>bit 0 - summer time<br/>bit 5 - date not set<br/>bit 6 - time not set |
 ## Parameter table 74
 | Index | Size | Description |
 |-------|------|-------------|

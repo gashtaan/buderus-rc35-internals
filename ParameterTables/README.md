@@ -91,22 +91,22 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 | [76](#parameter-table-76) | local | 12 | ANY | - | yes |
 | [77](#parameter-table-77) | local | 13 | ANY | - | yes |
 | [78](#parameter-table-78-83-88-93) | shared | 3D | ANY | - | yes |
-| [79](#parameter-table-79) | local | 3E | ANY | 60 | no |
+| [79](#parameter-table-79-84-89-94) | local | 3E | ANY | 60 | no |
 | [80](#parameter-table-80) | - | - | - | - | yes |
 | [81](#parameter-table-81) | shared | 3F | ANY | - | yes |
 | [82](#parameter-table-82) | shared | 42 | ANY | - | yes |
 | [83](#parameter-table-78-83-88-93) | shared | 47 | ANY | - | yes |
-| [84](#parameter-table-84) | local | 48 | ANY | 60 | no |
+| [84](#parameter-table-79-84-89-94) | local | 48 | ANY | 60 | no |
 | [85](#parameter-table-85) | - | - | - | - | yes |
 | [86](#parameter-table-86) | shared | 49 | ANY | - | yes |
 | [87](#parameter-table-87) | shared | 4C | ANY | - | yes |
 | [88](#parameter-table-78-83-88-93) | shared | 51 | ANY | - | yes |
-| [89](#parameter-table-89) | local | 52 | ANY | 60 | no |
+| [89](#parameter-table-79-84-89-94) | local | 52 | ANY | 60 | no |
 | [90](#parameter-table-90) | - | - | - | - | yes |
 | [91](#parameter-table-91) | shared | 53 | ANY | - | yes |
 | [92](#parameter-table-92) | shared | 56 | ANY | - | yes |
 | [93](#parameter-table-78-83-88-93) | shared | 5B | ANY | - | yes |
-| [94](#parameter-table-94) | local | 5C | ANY | 60 | no |
+| [94](#parameter-table-79-84-89-94) | local | 5C | ANY | 60 | no |
 | [95](#parameter-table-95) | - | - | - | - | yes |
 | [96](#parameter-table-96) | shared | 5D | ANY | - | yes |
 | [97](#parameter-table-97) | shared | 60 | ANY | - | yes |
@@ -1174,7 +1174,7 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 | 39 | 1 | -20 | 10 | 5 | Outside temperature for reduce operation |
 | 40 | 1 | -20 | 10 | 5 | Outside temperature for holiday operation |
 | 41 | 1 | 0 | 3 | 2 | Holiday reduction mode |
-## Parameter table 79
+## Parameter table 79, 84, 89, 94
 | Index | Size | Description |
 |-------|------|-------------|
 | 0 | 1 ||
@@ -1403,23 +1403,6 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 | 81 | 1 | 0 | 144 | 144 ||
 | 82 | 1 | 0 | 231 | 231 ||
 | 83 | 1 | 0 | 144 | 144 ||
-## Parameter table 84
-| Index | Size | Description |
-|-------|------|-------------|
-| 0 | 1 ||
-| 1 | 1 ||
-| 2 | 1 ||
-| 3 | 2 ||
-| 4 | 1 ||
-| 5 | 1 ||
-| 6 | 1 ||
-| 7 | 1 ||
-| 8 | 1 ||
-| 9 | 2 ||
-| 10 | 1 ||
-| 11 | 1 ||
-| 12 | 1 ||
-| 13 | 1 ||
 ## Parameter table 85
 | Index | Size | Description |
 |-------|------|-------------|
@@ -1632,23 +1615,6 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 | 81 | 1 | 0 | 144 | 144 ||
 | 82 | 1 | 0 | 231 | 231 ||
 | 83 | 1 | 0 | 144 | 144 ||
-## Parameter table 89
-| Index | Size | Description |
-|-------|------|-------------|
-| 0 | 1 ||
-| 1 | 1 ||
-| 2 | 1 ||
-| 3 | 2 ||
-| 4 | 1 ||
-| 5 | 1 ||
-| 6 | 1 ||
-| 7 | 1 ||
-| 8 | 1 ||
-| 9 | 2 ||
-| 10 | 1 ||
-| 11 | 1 ||
-| 12 | 1 ||
-| 13 | 1 ||
 ## Parameter table 90
 | Index | Size | Description |
 |-------|------|-------------|
@@ -1861,23 +1827,6 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 | 81 | 1 | 0 | 144 | 144 ||
 | 82 | 1 | 0 | 231 | 231 ||
 | 83 | 1 | 0 | 144 | 144 ||
-## Parameter table 94
-| Index | Size | Description |
-|-------|------|-------------|
-| 0 | 1 ||
-| 1 | 1 ||
-| 2 | 1 ||
-| 3 | 2 ||
-| 4 | 1 ||
-| 5 | 1 ||
-| 6 | 1 ||
-| 7 | 1 ||
-| 8 | 1 ||
-| 9 | 2 ||
-| 10 | 1 ||
-| 11 | 1 ||
-| 12 | 1 ||
-| 13 | 1 ||
 ## Parameter table 95
 | Index | Size | Description |
 |-------|------|-------------|

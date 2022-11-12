@@ -1177,8 +1177,8 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 ## Parameter table 79, 84, 89, 94, 99
 | Index | Size | Description |
 |-------|------|-------------|
-| 0 | 1 | Flags |
-| 1 | 1 | Flags |
+| 0 | 1 | Flags:<br/>bit 0 - switch off optimization active<br/>bit 1 - switch on optimization active<br/>bit 2 - auto mode<br/>bit 3 - DHW priority<br/>bit 4 - drying cycle active<br/>bit 5 - holiday operation<br/>bit 6 - frost protection active<br/>bit 7 - manual mode |
+| 1 | 1 | Flags:<br/>bit 0 - summer operation<br/>bit 1 - daytime operation<br/>bit 4 - room temperature until next switch point override<br/>bit 5 - switch on optimization boost<br/>bit 7 - party operation |
 | 2 | 1 | Room temperature target |
 | 3 | 2 | Room temperature actual |
 | 4 | 1 | Switch on optimization elapsed time |
@@ -1190,7 +1190,7 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 | 10 | 1 | Requested power of the boiler |
 | 11 | 1 | Switching program state |
 | 12 | 1 | Calculated target flow temperature |
-| 13 | 1 | Flags |
+| 13 | 1 | Flags:</br>bit 0 - no room temperature input, but needed<br/>bit 1 - reduce interrupted<br/>bit 2 - heating disabled |
 ## Parameter table 80, 85, 90, 95, 100
 | Index | Size | Description |
 |-------|------|-------------|

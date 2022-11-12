@@ -1132,48 +1132,48 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 ## Parameter table 78
 | Index | Size | Min | Max | Default | Description |
 |-------|------|-----|-----|---------|-------------|
-| 0 | 1 | 0 | 5 | 1 ||
-| 1 | 1 | 10 | 58 | 34 ||
-| 2 | 1 | 12 | 60 | 42 ||
-| 3 | 1 | 10 | 60 | 34 ||
-| 4 | 1 | 0 | 10 | 0 ||
-| 5 | 1 | 0 | 99 | 40 ||
-| 6 | 1 | -10 | 10 | 0 ||
-| 7 | 1 | 0 | 2 | 2 ||
-| 8 | 1 | -1 | 0 | 0 ||
-| 9 | 1 | 1 | 10 | 5 ||
-| 10 | 1 | 1 | 40 | 5 ||
-| 11 | 1 | 25 | 60 | 45 ||
-| 12 | 1 | 0 | 5 | 1 ||
-| 13 | 1 | 1 | 5 | 1 ||
-| 14 | 1 | 0 | 20 | 4 ||
-| 15 | 1 | 30 | 90 | 75 ||
-| 16 | 1 | 5 | 70 | 5 ||
-| 17 | 1 | 30 | 90 | 75 ||
-| 18 | 1 | 0 | 2 | 1 ||
-| 19 | 1 | -1 | 0 | 0 ||
-| 20 | 1 | 10 | 60 | 60 ||
-| 21 | 1 | -1 | 0 | -1 ||
-| 22 | 1 | 9 | 31 | 17 ||
-| 23 | 1 | -20 | 10 | 5 ||
-| 24 | 1 | 0 | 20 | 5 ||
-| 25 | 1 | 0 | 3 | 3 ||
-| 26 | 1 | 0 | 2 | 2 ||
+| 0 | 1 | 0 | 5 | 1 | Heating type:<br/>1 - radiatior<br/>2 - convector<br/>3 - floor<br/>4 - room flow |
+| 1 | 1 | 10 | 58 | 34 | Room temperature day |
+| 2 | 1 | 12 | 60 | 42 | Room temperature night |
+| 3 | 1 | 10 | 60 | 34 | Room temperature holiday |
+| 4 | 1 | 0 | 10 | 0 | Maximum room influence |
+| 5 | 1 | 0 | 99 | 40 | Room influence factor |
+| 6 | 1 | -10 | 10 | 0 | Room temperature offset |
+| 7 | 1 | 0 | 2 | 2 | Operating mode:<br/>0 - night<br/>1 - day<br/>2 - auto |
+| 8 | 1 | -1 | 0 | 0 | Drying cycle active |
+| 9 | 1 | 1 | 10 | 5 | Drying cycle temperature decrease |
+| 10 | 1 | 1 | 40 | 5 | Drying cycle temperature increase |
+| 11 | 1 | 25 | 60 | 45 | Drying cycle maximum flow temperature |
+| 12 | 1 | 0 | 5 | 1 | Drying cycle reduced flow temperature duration |
+| 13 | 1 | 1 | 5 | 1 | Drying cycle duration |
+| 14 | 1 | 0 | 20 | 4 | Drying cycle maximum flow temperature duration |
+| 15 | 1 | 30 | 90 | 75 | Maximum flow temperature (radiator) |
+| 16 | 1 | 5 | 70 | 5 | Minimum flow temperature |
+| 17 | 1 | 30 | 90 | 75 | Standard temperature (radiator) |
+| 18 | 1 | 0 | 2 | 1 |  |
+| 19 | 1 | -1 | 0 | 0 | Switch optimizations enabled |
+| 20 | 1 | 10 | 60 | 60 | Parameter for switch off optimization (maximum ahead time) |
+| 21 | 1 | -1 | 0 | -1 | DHW priority active |
+| 22 | 1 | 9 | 31 | 17 | Summer operation temperature |
+| 23 | 1 | -20 | 10 | 5 | Frost protection temperature |
+| 24 | 1 | 0 | 20 | 5 | Boiler increase |
+| 25 | 1 | 0 | 3 | 3 | Reduction mode:<br/>0 - shutdown<br/>1 - reduced operation<br/>2 - room setback<br/>3 - outdoor setback |
+| 26 | 1 | 0 | 2 | 2 | Assigned operating unit:<br/>0 - none<br/>1 - RC2x<br/>2 - RC35 |
 | 27 | 1 | 0 | 7 | 0 ||
-| 28 | 1 | 0 | 2 | 1 ||
-| 29 | 1 | 5 | 80 | 40 ||
-| 30 | 1 | 5 | 100 | 25 ||
-| 31 | 1 | 0 | 100 | 10 ||
-| 32 | 1 | 1 | 3 | 1 ||
-| 33 | 1 | 0 | 1 | 0 ||
-| 34 | 1 | -1 | 0 | -1 ||
-| 35 | 1 | 25 | 60 | 50 ||
-| 36 | 1 | 25 | 60 | 45 ||
-| 37 | 1 | 0 | 60 | 0 ||
-| 38 | 1 | -31 | 10 | -31 ||
-| 39 | 1 | -20 | 10 | 5 ||
-| 40 | 1 | -20 | 10 | 5 ||
-| 41 | 1 | 0 | 3 | 2 ||
+| 28 | 1 | 0 | 2 | 1 | Frost protection temperature source:<br/>0 - disabled<br/>1 - outside temperature<br/>2 - room temperature |
+| 29 | 1 | 5 | 80 | 40 | Parameter for targets calculation in room temperature control mode |
+| 30 | 1 | 5 | 100 | 25 | Parameter for targets calculation in room temperature control mode |
+| 31 | 1 | 0 | 100 | 10 | Parameter for targets calculation in room temperature control mode (rate of room temperature change ratio) |
+| 32 | 1 | 1 | 3 | 1 | Heating system type:<br/>1 - radiator<br/>2 - convector<br/>3 - floor |
+| 33 | 1 | 0 | 1 | 0 | Control mode:<br/>0 - outside temperature<br/>1 - room temperature |
+| 34 | 1 | -1 | 0 | -1 | Heating circuit active |
+| 35 | 1 | 25 | 60 | 50 | Maximum flow temperature (floor) |
+| 36 | 1 | 25 | 60 | 45 | Standard temperature (floor) |
+| 37 | 1 | 0 | 60 | 0 | Room temperature until next switch point |
+| 38 | 1 | -31 | 10 | -31 | Outside temperature for reduce interruption |
+| 39 | 1 | -20 | 10 | 5 | Outside temperature for reduce operation |
+| 40 | 1 | -20 | 10 | 5 | Outside temperature for holiday operation |
+| 41 | 1 | 0 | 3 | 2 | Holiday reduction mode |
 ## Parameter table 79
 | Index | Size | Description |
 |-------|------|-------------|

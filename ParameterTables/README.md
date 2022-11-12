@@ -90,29 +90,29 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 | [75](#parameter-table-75) | - | - | - | - | yes |
 | [76](#parameter-table-76) | local | 12 | ANY | - | yes |
 | [77](#parameter-table-77) | local | 13 | ANY | - | yes |
-| [78](#parameter-table-78-83-88-93) | shared | 3D | ANY | - | yes |
-| [79](#parameter-table-79-84-89-94) | local | 3E | ANY | 60 | no |
-| [80](#parameter-table-80) | - | - | - | - | yes |
+| [78](#parameter-table-78-83-88-93-98) | shared | 3D | ANY | - | yes |
+| [79](#parameter-table-79-84-89-94-99) | local | 3E | ANY | 60 | no |
+| [80](#parameter-table-80-85-90-95-100) | - | - | - | - | yes |
 | [81](#parameter-table-81) | shared | 3F | ANY | - | yes |
 | [82](#parameter-table-82) | shared | 42 | ANY | - | yes |
-| [83](#parameter-table-78-83-88-93) | shared | 47 | ANY | - | yes |
-| [84](#parameter-table-79-84-89-94) | local | 48 | ANY | 60 | no |
-| [85](#parameter-table-85) | - | - | - | - | yes |
+| [83](#parameter-table-78-83-88-93-98) | shared | 47 | ANY | - | yes |
+| [84](#parameter-table-79-84-89-94-99) | local | 48 | ANY | 60 | no |
+| [85](#parameter-table-80-85-90-95-100) | - | - | - | - | yes |
 | [86](#parameter-table-86) | shared | 49 | ANY | - | yes |
 | [87](#parameter-table-87) | shared | 4C | ANY | - | yes |
-| [88](#parameter-table-78-83-88-93) | shared | 51 | ANY | - | yes |
-| [89](#parameter-table-79-84-89-94) | local | 52 | ANY | 60 | no |
-| [90](#parameter-table-90) | - | - | - | - | yes |
+| [88](#parameter-table-78-83-88-93-98) | shared | 51 | ANY | - | yes |
+| [89](#parameter-table-79-84-89-94-99) | local | 52 | ANY | 60 | no |
+| [90](#parameter-table-80-85-90-95-100) | - | - | - | - | yes |
 | [91](#parameter-table-91) | shared | 53 | ANY | - | yes |
 | [92](#parameter-table-92) | shared | 56 | ANY | - | yes |
-| [93](#parameter-table-78-83-88-93) | shared | 5B | ANY | - | yes |
-| [94](#parameter-table-79-84-89-94) | local | 5C | ANY | 60 | no |
-| [95](#parameter-table-95) | - | - | - | - | yes |
+| [93](#parameter-table-78-83-88-93-98) | shared | 5B | ANY | - | yes |
+| [94](#parameter-table-79-84-89-94-99) | local | 5C | ANY | 60 | no |
+| [95](#parameter-table-80-85-90-95-100) | - | - | - | - | yes |
 | [96](#parameter-table-96) | shared | 5D | ANY | - | yes |
 | [97](#parameter-table-97) | shared | 60 | ANY | - | yes |
-| [98](#parameter-table-98) | - | - | - | - | yes |
-| [99](#parameter-table-99) | - | 66 | ANY | 60 | no |
-| [100](#parameter-table-100) | - | - | - | - | yes |
+| [98](#parameter-table-78-83-88-93-98) | - | - | - | - | yes |
+| [99](#parameter-table-79-84-89-94-99) | - | 66 | ANY | 60 | no |
+| [100](#parameter-table-80-85-90-95-100) | - | - | - | - | yes |
 | [101](#parameter-table-101) | - | - | - | - | yes |
 | [102](#parameter-table-102) | - | - | - | - | yes |
 | [103](#parameter-table-103) | shared | 38 | ANY | - | yes |
@@ -1129,7 +1129,7 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 | 45 | 1 ||
 | 46 | 1 ||
 | 47 | 1 ||
-## Parameter table 78, 83, 88, 93
+## Parameter table 78, 83, 88, 93, 98
 | Index | Size | Min | Max | Default | Description |
 |-------|------|-----|-----|---------|-------------|
 | 0 | 1 | 0 | 5 | 1 | Heating type:<br/>1 - radiatior<br/>2 - convector<br/>3 - floor<br/>4 - room flow |
@@ -1174,7 +1174,7 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 | 39 | 1 | -20 | 10 | 5 | Outside temperature for reduce operation |
 | 40 | 1 | -20 | 10 | 5 | Outside temperature for holiday operation |
 | 41 | 1 | 0 | 3 | 2 | Holiday reduction mode |
-## Parameter table 79, 84, 89, 94
+## Parameter table 79, 84, 89, 94, 99
 | Index | Size | Description |
 |-------|------|-------------|
 | 0 | 1 ||
@@ -1191,7 +1191,7 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 | 11 | 1 ||
 | 12 | 1 ||
 | 13 | 1 ||
-## Parameter table 80
+## Parameter table 80, 85, 90, 95, 100
 | Index | Size | Description |
 |-------|------|-------------|
 | 0 | 1 ||
@@ -1403,29 +1403,6 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 | 81 | 1 | 0 | 144 | 144 ||
 | 82 | 1 | 0 | 231 | 231 ||
 | 83 | 1 | 0 | 144 | 144 ||
-## Parameter table 85
-| Index | Size | Description |
-|-------|------|-------------|
-| 0 | 1 ||
-| 1 | 1 ||
-| 2 | 1 ||
-| 3 | 1 ||
-| 4 | 1 ||
-| 5 | 1 ||
-| 6 | 1 ||
-| 7 | 1 ||
-| 8 | 1 ||
-| 9 | 1 ||
-| 10 | 1 ||
-| 11 | 1 ||
-| 12 | 1 ||
-| 13 | 1 ||
-| 14 | 1 ||
-| 15 | 1 ||
-| 16 | 1 ||
-| 17 | 1 ||
-| 18 | 1 ||
-| 19 | 1 ||
 ## Parameter table 86
 | Index | Size | Min | Max | Default | Description |
 |-------|------|-----|-----|---------|-------------|
@@ -1615,29 +1592,6 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 | 81 | 1 | 0 | 144 | 144 ||
 | 82 | 1 | 0 | 231 | 231 ||
 | 83 | 1 | 0 | 144 | 144 ||
-## Parameter table 90
-| Index | Size | Description |
-|-------|------|-------------|
-| 0 | 1 ||
-| 1 | 1 ||
-| 2 | 1 ||
-| 3 | 1 ||
-| 4 | 1 ||
-| 5 | 1 ||
-| 6 | 1 ||
-| 7 | 1 ||
-| 8 | 1 ||
-| 9 | 1 ||
-| 10 | 1 ||
-| 11 | 1 ||
-| 12 | 1 ||
-| 13 | 1 ||
-| 14 | 1 ||
-| 15 | 1 ||
-| 16 | 1 ||
-| 17 | 1 ||
-| 18 | 1 ||
-| 19 | 1 ||
 ## Parameter table 91
 | Index | Size | Min | Max | Default | Description |
 |-------|------|-----|-----|---------|-------------|
@@ -1827,29 +1781,6 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 | 81 | 1 | 0 | 144 | 144 ||
 | 82 | 1 | 0 | 231 | 231 ||
 | 83 | 1 | 0 | 144 | 144 ||
-## Parameter table 95
-| Index | Size | Description |
-|-------|------|-------------|
-| 0 | 1 ||
-| 1 | 1 ||
-| 2 | 1 ||
-| 3 | 1 ||
-| 4 | 1 ||
-| 5 | 1 ||
-| 6 | 1 ||
-| 7 | 1 ||
-| 8 | 1 ||
-| 9 | 1 ||
-| 10 | 1 ||
-| 11 | 1 ||
-| 12 | 1 ||
-| 13 | 1 ||
-| 14 | 1 ||
-| 15 | 1 ||
-| 16 | 1 ||
-| 17 | 1 ||
-| 18 | 1 ||
-| 19 | 1 ||
 ## Parameter table 96
 | Index | Size | Min | Max | Default | Description |
 |-------|------|-----|-----|---------|-------------|
@@ -2039,91 +1970,6 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 | 81 | 1 | 0 | 144 | 144 ||
 | 82 | 1 | 0 | 231 | 231 ||
 | 83 | 1 | 0 | 144 | 144 ||
-## Parameter table 98
-| Index | Size | Min | Max | Default | Description |
-|-------|------|-----|-----|---------|-------------|
-| 0 | 1 | 0 | 5 | 1 ||
-| 1 | 1 | 10 | 58 | 34 ||
-| 2 | 1 | 12 | 60 | 42 ||
-| 3 | 1 | 10 | 60 | 34 ||
-| 4 | 1 | 0 | 10 | 0 ||
-| 5 | 1 | 0 | 99 | 40 ||
-| 6 | 1 | -10 | 10 | 0 ||
-| 7 | 1 | 0 | 2 | 2 ||
-| 8 | 1 | -1 | 0 | 0 ||
-| 9 | 1 | 1 | 10 | 5 ||
-| 10 | 1 | 1 | 40 | 5 ||
-| 11 | 1 | 25 | 60 | 45 ||
-| 12 | 1 | 0 | 5 | 1 ||
-| 13 | 1 | 1 | 5 | 1 ||
-| 14 | 1 | 0 | 20 | 4 ||
-| 15 | 1 | 30 | 90 | 75 ||
-| 16 | 1 | 5 | 70 | 5 ||
-| 17 | 1 | 30 | 90 | 75 ||
-| 18 | 1 | 0 | 2 | 1 ||
-| 19 | 1 | -1 | 0 | 0 ||
-| 20 | 1 | 10 | 60 | 60 ||
-| 21 | 1 | -1 | 0 | -1 ||
-| 22 | 1 | 9 | 31 | 17 ||
-| 23 | 1 | -20 | 10 | 5 ||
-| 24 | 1 | 0 | 20 | 5 ||
-| 25 | 1 | 0 | 3 | 3 ||
-| 26 | 1 | 0 | 2 | 2 ||
-| 27 | 1 | 0 | 7 | 0 ||
-| 28 | 1 | 0 | 2 | 1 ||
-| 29 | 1 | 5 | 80 | 40 ||
-| 30 | 1 | 5 | 100 | 25 ||
-| 31 | 1 | 0 | 100 | 10 ||
-| 32 | 1 | 1 | 3 | 1 ||
-| 33 | 1 | 0 | 1 | 0 ||
-| 34 | 1 | -1 | 0 | -1 ||
-| 35 | 1 | 25 | 60 | 50 ||
-| 36 | 1 | 25 | 60 | 45 ||
-| 37 | 1 | 0 | 60 | 0 ||
-| 38 | 1 | -31 | 10 | -31 ||
-| 39 | 1 | -20 | 10 | 5 ||
-| 40 | 1 | -20 | 10 | 5 ||
-| 41 | 1 | 0 | 3 | 2 ||
-## Parameter table 99
-| Index | Size | Description |
-|-------|------|-------------|
-| 0 | 1 ||
-| 1 | 1 ||
-| 2 | 1 ||
-| 3 | 2 ||
-| 4 | 1 ||
-| 5 | 1 ||
-| 6 | 1 ||
-| 7 | 1 ||
-| 8 | 1 ||
-| 9 | 2 ||
-| 10 | 1 ||
-| 11 | 1 ||
-| 12 | 1 ||
-| 13 | 1 ||
-## Parameter table 100
-| Index | Size | Description |
-|-------|------|-------------|
-| 0 | 1 ||
-| 1 | 1 ||
-| 2 | 1 ||
-| 3 | 1 ||
-| 4 | 1 ||
-| 5 | 1 ||
-| 6 | 1 ||
-| 7 | 1 ||
-| 8 | 1 ||
-| 9 | 1 ||
-| 10 | 1 ||
-| 11 | 1 ||
-| 12 | 1 ||
-| 13 | 1 ||
-| 14 | 1 ||
-| 15 | 1 ||
-| 16 | 1 ||
-| 17 | 1 ||
-| 18 | 1 ||
-| 19 | 1 ||
 ## Parameter table 101
 | Index | Size | Min | Max | Default | Description |
 |-------|------|-----|-----|---------|-------------|

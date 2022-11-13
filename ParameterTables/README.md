@@ -1260,7 +1260,7 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 | 21 | 1 | -1 | 0 | -1 | External temperature damping disabled |
 | 22 | 1 | 0 | 4 | 0 | Upper line displayed value |
 | 23 | 1 | 0 | 99 | 99 | Default language |
-| 24 | 1 | -1 | 0 | 0 ||
+| 24 | 1 | -1 | 0 | 0 | Regulate boiler power instead of flow temperature in room temperature control mode |
 | 25 | 1 | 0 | 0 | 0 | Temperature unit:<br/>0 - celsius<br/>1 - fahrenheits |
 | 26 | 1 | 0 | 0 | 0 | Time format:<br/>0 - 24hr<br/>1 - 12AM/PM |
 | 27 | 1 | 0 | 0 | 0 | Date format:<br/>0 - DD.MM.YY<br/>1 - YY/MM/DD |

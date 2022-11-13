@@ -1272,9 +1272,9 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 | 2 | 1 | Circulation state |
 | 3 | 2 | ADC temperature calibrated |
 | 4 | 2 | ADC internal temperature |
-| 5 | 2 | ADC internal temperature 1 |
+| 5 | 2 | ADC internal temperature damped |
 | 6 | 2 | ADC external temperature |
-| 7 | 2 | ADC external temperature 2 |
+| 7 | 2 | ADC external temperature damped |
 ## Parameter table 107
 | Index | Size | Description |
 |-------|------|-------------|

@@ -174,139 +174,21 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 ## Parameter table 4
 | Index | Size | Description |
 |-------|------|-------------|
-| 0 | 1 ||
-| 1 | 1 ||
-| 2 | 2 ||
-| 3 | 1 ||
-| 4 | 1 ||
-| 5 | 1 ||
-| 6 | 1 ||
-| 7 | 1 ||
-| 8 | 2 ||
-| 9 | 1 ||
-| 10 | 1 ||
-| 11 | 1 ||
-| 12 | 2 ||
-| 13 | 1 ||
-| 14 | 1 ||
-| 15 | 1 ||
-| 16 | 1 ||
-| 17 | 1 ||
-| 18 | 2 ||
-| 19 | 1 ||
-| 20 | 1 ||
-| 21 | 1 ||
-| 22 | 2 ||
-| 23 | 1 ||
-| 24 | 1 ||
-| 25 | 1 ||
-| 26 | 1 ||
-| 27 | 1 ||
-| 28 | 2 ||
-| 29 | 1 ||
-| 30 | 1 ||
-| 31 | 1 ||
-| 32 | 2 ||
-| 33 | 1 ||
-| 34 | 1 ||
-| 35 | 1 ||
-| 36 | 1 ||
-| 37 | 1 ||
-| 38 | 2 ||
-| 39 | 1 ||
-| 40 | 1 ||
-| 41 | 1 ||
-| 42 | 2 ||
-| 43 | 1 ||
-| 44 | 1 ||
-| 45 | 1 ||
-| 46 | 1 ||
-| 47 | 1 ||
-| 48 | 2 ||
-| 49 | 1 ||
-| 50 | 1 ||
-| 51 | 1 ||
-| 52 | 2 ||
-| 53 | 1 ||
-| 54 | 1 ||
-| 55 | 1 ||
-| 56 | 1 ||
-| 57 | 1 ||
-| 58 | 2 ||
-| 59 | 1 ||
-| 60 | 1 ||
-| 61 | 1 ||
-| 62 | 2 ||
-| 63 | 1 ||
-| 64 | 1 ||
-| 65 | 1 ||
-| 66 | 1 ||
-| 67 | 1 ||
-| 68 | 2 ||
-| 69 | 1 ||
-| 70 | 1 ||
-| 71 | 1 ||
-| 72 | 2 ||
-| 73 | 1 ||
-| 74 | 1 ||
-| 75 | 1 ||
-| 76 | 1 ||
-| 77 | 1 ||
-| 78 | 2 ||
-| 79 | 1 ||
+| 0 | 2 | Error message - display code |
+| 2 | 2 | Error message - error number |
+| 3 | 5 | Error message - time |
+| 8 | 2 | Error message - duration |
+| 9 | 1 | Error message - bus address |
+| 10 | * | * repeat for another 7 messages |
 ## Parameter table 5
 | Index | Size | Description |
 |-------|------|-------------|
-| 0 | 1 ||
-| 1 | 1 ||
-| 2 | 2 ||
-| 3 | 1 ||
-| 4 | 1 ||
-| 5 | 1 ||
-| 6 | 1 ||
-| 7 | 1 ||
-| 8 | 2 ||
-| 9 | 1 ||
-| 10 | 1 ||
-| 11 | 1 ||
-| 12 | 2 ||
-| 13 | 1 ||
-| 14 | 1 ||
-| 15 | 1 ||
-| 16 | 1 ||
-| 17 | 1 ||
-| 18 | 2 ||
-| 19 | 1 ||
-| 20 | 1 ||
-| 21 | 1 ||
-| 22 | 2 ||
-| 23 | 1 ||
-| 24 | 1 ||
-| 25 | 1 ||
-| 26 | 1 ||
-| 27 | 1 ||
-| 28 | 2 ||
-| 29 | 1 ||
-| 30 | 1 ||
-| 31 | 1 ||
-| 32 | 2 ||
-| 33 | 1 ||
-| 34 | 1 ||
-| 35 | 1 ||
-| 36 | 1 ||
-| 37 | 1 ||
-| 38 | 2 ||
-| 39 | 1 ||
-| 40 | 1 ||
-| 41 | 1 ||
-| 42 | 2 ||
-| 43 | 1 ||
-| 44 | 1 ||
-| 45 | 1 ||
-| 46 | 1 ||
-| 47 | 1 ||
-| 48 | 2 ||
-| 49 | 1 ||
+| 0 | 2 | Error message - display code |
+| 2 | 2 | Error message - error number |
+| 3 | 5 | Error message - time |
+| 8 | 2 | Error message - duration |
+| 9 | 1 | Error message - bus address |
+| 10 | * | * repeat for another 3 messages |
 ## Parameter table 6
 | Index | Size | Min | Max | Default | Description |
 |-------|------|-----|-----|---------|-------------|
@@ -342,32 +224,32 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 ## Parameter table 9
 | Index | Size | Description |
 |-------|------|-------------|
-| 0 | 1 ||
-| 1 | 2 ||
-| 2 | 1 ||
-| 3 | 1 ||
-| 4 | 1 ||
+| 0 | 1 | Flow temperature target |
+| 1 | 2 | Flow temperature actual |
+| 2 | 1 | Boiler power maximum |
+| 3 | 1 | Boiler power actual |
+| 4 | 1 | Flags |
 | 5 | 1 ||
-| 6 | 1 ||
-| 7 | 1 ||
+| 6 | 1 | Flags |
+| 7 | 1 | Flags |
 | 8 | 2 ||
-| 9 | 2 ||
-| 10 | 2 ||
-| 11 | 2 ||
-| 12 | 1 ||
-| 13 | 1 ||
-| 14 | 1 ||
-| 15 | 2 ||
+| 9 | 2 | Water temperature |
+| 10 | 2 | Return temperature |
+| 11 | 2 | Flame current |
+| 12 | 1 | System pressure |
+| 13 | 1 | Service code 1 |
+| 14 | 1 | Service code 2 |
+| 15 | 2 | Error code |
 | 16 | 1 ||
 | 17 | 1 ||
 | 18 | 1 ||
-| 19 | 2 ||
+| 19 | 2 | Intake air temperature |
 | 20 | 2 ||
 | 21 | 2 ||
 | 22 | 1 ||
 | 23 | 2 ||
 | 24 | 1 ||
-| 25 | 1 ||
+| 25 | 1 | Flags |
 | 26 | 1 ||
 ## Parameter table 10
 | Index | Size | Description |

@@ -1238,53 +1238,53 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 |-------|------|-----|-----|---------|-------------|
 | 0 | 1 | 0 | 0 | 0 ||
 | 1 | 1 | 0 | 0 | 0 ||
-| 2 | 1 | -50 | 50 | 0 ||
+| 2 | 1 | -50 | 50 | 0 | Room temperature calibration |
 | 3 | 1 | 0 | 0 | 0 ||
-| 4 | 1 | -1 | 0 | -1 ||
-| 5 | 1 | -30 | 0 | -10 ||
-| 6 | 1 | 0 | 2 | 1 ||
-| 7 | 1 | 0 | 99 | 6 ||
-| 8 | 1 | 0 | 99 | 0 ||
-| 9 | 1 | 0 | 3 | 1 ||
+| 4 | 1 | -1 | 0 | -1 | Auto DST time enabled |
+| 5 | 1 | -30 | 0 | -10 | Lower expected temperature in region |
+| 6 | 1 | 0 | 2 | 1 | Building type |
+| 7 | 1 | 0 | 99 | 6 | Updated damped temperature rate |
+| 8 | 1 | 0 | 99 | 0 | Time to notify heating ahead |
+| 9 | 1 | 0 | 3 | 1 | Backlight delay:<br/>0 - off<br/>1 - off after 35 seconds of inactivity<br/>2 - off after 30 minutes of inactivity<br/>3 - always on |
 | 10 | 1 | 0 | 0 | 0 ||
-| 11 | 1 | -30 | 30 | 0 ||
-| 12 | 1 | -30 | 30 | 0 ||
-| 13 | 1 | -1 | 0 | 0 ||
-| 14 | 1 | -1 | 0 | -1 ||
-| 15 | 1 | 0 | 3 | 0 ||
-| 16 | 1 | -8 | 13 | 0 ||
-| 17 | 1 | 4 | 7 | 5 ||
-| 18 | 1 | 15 | 50 | 28 ||
-| 19 | 1 | 4 | 7 | 5 ||
+| 11 | 1 | -30 | 30 | 0 | Time seconds correction 1 |
+| 12 | 1 | -30 | 30 | 0 | Time seconds correction 2 |
+| 13 | 1 | -1 | 0 | 0 | Language is set |
+| 14 | 1 | -1 | 0 | -1 | Heating circuit unmixed |
+| 15 | 1 | 0 | 3 | 0 | Heating circuits count |
+| 16 | 1 | -8 | 13 | 0 | LCD contrast tune |
+| 17 | 1 | 4 | 7 | 5 | LCD brightness  |
+| 18 | 1 | 15 | 50 | 28 | LCD contrast base |
+| 19 | 1 | 4 | 7 | 5 |  |
 | 20 | 1 | 15 | 50 | 40 ||
-| 21 | 1 | -1 | 0 | -1 ||
-| 22 | 1 | 0 | 4 | 0 ||
-| 23 | 1 | 0 | 99 | 99 ||
+| 21 | 1 | -1 | 0 | -1 | External temperature damping disabled |
+| 22 | 1 | 0 | 4 | 0 | Upper line displayed value |
+| 23 | 1 | 0 | 99 | 99 | Default language |
 | 24 | 1 | -1 | 0 | 0 ||
-| 25 | 1 | 0 | 0 | 0 ||
-| 26 | 1 | 0 | 0 | 0 ||
-| 27 | 1 | 0 | 0 | 0 ||
+| 25 | 1 | 0 | 0 | 0 | Temperature unit:<br/>0 - celsius<br/>1 - fahrenheits |
+| 26 | 1 | 0 | 0 | 0 | Time format:<br/>0 - 24hr<br/>1 - 12AM/PM |
+| 27 | 1 | 0 | 0 | 0 | Date format:<br/>0 - DD.MM.YY<br/>1 - YY/MM/DD |
 ## Parameter table 106
 | Index | Size | Description |
 |-------|------|-------------|
-| 0 | 1 ||
-| 1 | 1 ||
-| 2 | 1 ||
-| 3 | 2 ||
-| 4 | 2 ||
-| 5 | 2 ||
-| 6 | 2 ||
-| 7 | 2 ||
+| 0 | 1 | Attenuated outside temperature |
+| 1 | 1 | DHW state |
+| 2 | 1 | Circulation state |
+| 3 | 2 | ADC temperature calibrated |
+| 4 | 2 | ADC internal temperature |
+| 5 | 2 | ADC internal temperature 1 |
+| 6 | 2 | ADC external temperature |
+| 7 | 2 | ADC external temperature 2 |
 ## Parameter table 107
 | Index | Size | Description |
 |-------|------|-------------|
-| 0 | 1 ||
-| 1 | 1 ||
-| 2 | 1 ||
-| 3 | 1 ||
-| 4 | 1 ||
-| 5 | 1 ||
-| 6 | 1 ||
+| 0 | 1 | Test enabled |
+| 1 | 1 | Test LCD pattern:<br/>ENNNNNNN<br/>E - enable<br/>N - pattern |
+| 2 | 1 | Test LED:<br/>E---NNNN<br/>E - enable<br/>N - bitmask for each LED |
+| 3 | 1 | Test backlight:<br/>ENNNNNNN<br/>E - enable<br/>N - 0 off, other on |
+| 4 | 1 | Test rotary selector:<br/>E-------<br/>E - enable<br/>Pressed buttons bitmask is stored in table 108/0 |
+| 5 | 1 | Test buttons:<br/>E-------<br/>E - enable</br>Rotary selector value is stored in table 108/1 |
+| 6 | 1 | Test LCD pattern flags |
 | 7 | 1 ||
 | 8 | 1 ||
 | 9 | 1 ||
@@ -1292,22 +1292,22 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 | 11 | 1 ||
 | 12 | 1 ||
 | 13 | 1 ||
-| 14 | 1 ||
-| 15 | 4 ||
-| 16 | 1 ||
+| 14 | 1 | Test language |
+| 15 | 4 | Test language bits |
+| 16 | 1 | Test language ID |
 ## Parameter table 108
 | Index | Size | Description |
 |-------|------|-------------|
-| 0 | 2 ||
-| 1 | 1 ||
-| 2 | 2 ||
-| 3 | 2 ||
-| 4 | 1 ||
-| 5 | 1 ||
+| 0 | 2 | Test buttons bitmask |
+| 1 | 1 | Test rotary selector value |
+| 2 | 2 | ADC internal temperature |
+| 3 | 2 | ADC external temperature |
+| 4 | 1 | Version major |
+| 5 | 1 | Version minor |
 | 6 | 1 ||
-| 7 | 1 ||
-| 8 | 4 ||
-| 9 | 4 ||
+| 7 | 1 | LCD default level |
+| 8 | 4 | Test language bits |
+| 9 | 4 | Test language bits |
 ## Parameter table 109
 | Index | Size | Description |
 |-------|------|-------------|
@@ -1358,45 +1358,5 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 ## Parameter table 112
 | Index | Size | Min | Max | Default | Description |
 |-------|------|-----|-----|---------|-------------|
-| 0 | 1 | 0 | 255 | 32 ||
-| 1 | 1 | 0 | 255 | 32 ||
-| 2 | 1 | 0 | 255 | 32 ||
-| 3 | 1 | 0 | 255 | 32 ||
-| 4 | 1 | 0 | 255 | 32 ||
-| 5 | 1 | 0 | 255 | 32 ||
-| 6 | 1 | 0 | 255 | 32 ||
-| 7 | 1 | 0 | 255 | 32 ||
-| 8 | 1 | 0 | 255 | 32 ||
-| 9 | 1 | 0 | 255 | 32 ||
-| 10 | 1 | 0 | 255 | 32 ||
-| 11 | 1 | 0 | 255 | 32 ||
-| 12 | 1 | 0 | 255 | 32 ||
-| 13 | 1 | 0 | 255 | 32 ||
-| 14 | 1 | 0 | 255 | 32 ||
-| 15 | 1 | 0 | 255 | 32 ||
-| 16 | 1 | 0 | 255 | 32 ||
-| 17 | 1 | 0 | 255 | 32 ||
-| 18 | 1 | 0 | 255 | 32 ||
-| 19 | 1 | 0 | 255 | 32 ||
-| 20 | 1 | 0 | 255 | 32 ||
-| 21 | 1 | 0 | 255 | 32 ||
-| 22 | 1 | 0 | 255 | 32 ||
-| 23 | 1 | 0 | 255 | 32 ||
-| 24 | 1 | 0 | 255 | 32 ||
-| 25 | 1 | 0 | 255 | 32 ||
-| 26 | 1 | 0 | 255 | 32 ||
-| 27 | 1 | 0 | 255 | 32 ||
-| 28 | 1 | 0 | 255 | 32 ||
-| 29 | 1 | 0 | 255 | 32 ||
-| 30 | 1 | 0 | 255 | 32 ||
-| 31 | 1 | 0 | 255 | 32 ||
-| 32 | 1 | 0 | 255 | 32 ||
-| 33 | 1 | 0 | 255 | 32 ||
-| 34 | 1 | 0 | 255 | 32 ||
-| 35 | 1 | 0 | 255 | 32 ||
-| 36 | 1 | 0 | 255 | 32 ||
-| 37 | 1 | 0 | 255 | 32 ||
-| 38 | 1 | 0 | 255 | 32 ||
-| 39 | 1 | 0 | 255 | 32 ||
-| 40 | 1 | 0 | 255 | 32 ||
-| 41 | 1 | 0 | 255 | 32 ||
+| 0 | 21 | 0 | 255 | 32 | Contact details 1 |
+| 21 | 21 | 0 | 255 | 32 | Contact details 2 |

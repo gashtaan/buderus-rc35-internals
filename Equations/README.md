@@ -1,3 +1,16 @@
+# Room temperature influence
+If outside temperatuer control mode is selected and room temperature influence is set by user, RC35 virtually increase/decrease target room temperature. The greater the difference between target room temperature and actual room temperature is, the greater is level of increase/decrease. The infuence configured by user limits that change to some interval. Such affected room temperature target is then input to power and flow temperature targets calculation.
+$$T_r = T_r + C$$
+$$C = max(-I, min(F(T_r - T_a), 3I))$$
+
+T<sub>r</sub> : target room temperature
+
+T<sub>a</sub> : actual room temperature
+
+I : room influence
+
+F : multiplication factor defined in 5th parameter of HC parameter table (default 40 = 4.0)
+
 # Power and flow temperature targets calculation
 RC35 continuously calculates target power and target flow temperature according to selected control mode. It's up to boiler to deliver these targets to the heating system.
 

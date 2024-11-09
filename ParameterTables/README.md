@@ -254,18 +254,18 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 ## Parameter table 10
 | Index | Size | Description |
 |-------|------|-------------|
-| 0 | 2 ||
+| 0 | 2 | External temperature |
 | 1 | 2 ||
-| 2 | 2 ||
+| 2 | 2 | Flue gas temperature |
 | 3 | 2 ||
 | 4 | 1 ||
-| 5 | 1 ||
-| 6 | 3 ||
-| 7 | 3 ||
-| 8 | 3 ||
+| 5 | 1 | Pump modulation |
+| 6 | 3 | Burner starts |
+| 7 | 3 | Operation hours stage 1 |
+| 8 | 3 | Operation hours stage 2 |
 | 9 | 3 ||
 | 10 | 3 ||
-| 11 | 2 ||
+| 11 | 2 | Actual flow temperature |
 ## Parameter table 11
 | Index | Size | Description |
 |-------|------|-------------|

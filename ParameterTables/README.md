@@ -206,8 +206,10 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 ## Parameter table 7
 | Index | Size | Description |
 |-------|------|-------------|
-| 0 | 1 | DHW flags:<br/>bit 0 - enabled<br/>bit 1 - single charge active (reset by boiler when stopped)<br/>bit 2 - disinfection active (reset by boiler when stopped)<br/>bit 4 - day mode<br/>bit 5 - single charge requested (reset by unit when request is cancelled)<br/>bit 6 - disinfection requested |
-| 1 | 1 | Circulation pump flags:<br/>bit 0 - enabled<br/>bit 1 - circulation active (reset by boiler when stopped)<br/>bit 4 - day mode<br/>bit 5 - circulation requested  |
+| 0 | 1 | DHW functions:<br/>bit 0 - enabled set<br/>bit 1 - single charge request set<br/>bit 2 - disinfection request set<br/>bit 4 - enabled<br/>bit 5 - single charge requested<br/>bit 6 - disinfection requested |
+| 1 | 1 | Circulation pump functions:<br/>bit 0 - enabled set<br/>bit 1 - circulation request set<br/>bit 4 - enabled<br/>bit 5 - circulation requested  |
+
+Lower nibble bits mask which bits of upper nibble should enable/disable desired function, otherwise their value is ignored.
 ## Parameter table 8
 | Index | Size | Description |
 |-------|------|-------------|

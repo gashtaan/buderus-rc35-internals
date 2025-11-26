@@ -214,15 +214,18 @@ Lower nibble bits mask which bits of upper nibble should enable/disable desired 
 | Index | Size | Description |
 |-------|------|-------------|
 | 0 | 1 | DHW target temperature |
-| 1 | 2 | DHW measured temperature |
-| 2 | 2 ||
+| 1 | 2 | DHW measured temperature MC10 |
+| 2 | 2 | DHW measured temperature BC10 |
 | 3 | 1 | DHW flags:<br/>bit 0 - day mode<br/>bit 1 - single charge in progress |
 | 4 | 1 | DHW error flags:<br/>bit 0 - sensor 1 is defect<br/>bit 1 - sensor 2 is defect<br/>bit 2 - water stays cold<br/>bit 3 - disinfection was unsuccessful |
 | 5 | 1 | Circulation pump flags |
 | 6 | 1 ||
-| 7 | 1 ||
-| 8 | 3 ||
-| 9 | 3 ||
+| 7 | 1 | Water flow |
+| 8 | 3 | DHW operation time |
+| 9 | 3 | DHW burner starts |
+| - | - | - |
+| 10 | 1 | BC10 PWM duty (CMP10) |
+| 11 | 2 | MC10 sensor 8 |
 ## Parameter table 9
 | Index | Size | Description |
 |-------|------|-------------|

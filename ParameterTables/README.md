@@ -301,18 +301,18 @@ Lower nibble bits mask which bits of upper nibble should enable/disable desired 
 ## Parameter table 14
 | Index | Size | Min | Max | Default | Description |
 |-------|------|-----|-----|---------|-------------|
-| 0 | 1 | -1 | 0 | -1 ||
-| 1 | 1 | 30 | 90 | 90 ||
-| 2 | 1 | 0 | 100 | 100 ||
-| 3 | 1 | -1 | 0 | 0 ||
-| 4 | 1 | 2 | 15 | 6 ||
-| 5 | 1 | -15 | -2 | -6 ||
-| 6 | 1 | 0 | 60 | 10 ||
+| 0 | 1 | -1 | 0 | -1 | Heating active |
+| 1 | 1 | 30 | 90 | 90 | Max off temperature |
+| 2 | 1 | 0 | 100 | 100 | Boiler output maximum |
+| 3 | 1 | -1 | 0 | 0 | Boiler output minimum |
+| 4 | 1 | 2 | 15 | 6 | Switch-off hysteresis |
+| 5 | 1 | -15 | -2 | -6 | Switch-on hysteresis |
+| 6 | 1 | 0 | 60 | 10 | Burner off time |
 | 7 | 1 | 0 | 2 | 1 ||
-| 8 | 1 | 0 | 61 | 5 ||
-| 9 | 1 | 0 | 100 | 100 ||
-| 10 | 1 | 0 | 100 | 100 ||
-| 11 | 1 | 0 | 8 | 2 ||
+| 8 | 1 | 0 | 61 | 5 | Pump overrun time |
+| 9 | 1 | 0 | 100 | 100 | Pump power maximum |
+| 10 | 1 | 0 | 100 | 100 | Pump power minimum |
+| 11 | 1 | 0 | 8 | 2 | Pump regulation pressure |
 | 12 | 1 | 2 | 15 | 8 ||
 | 13 | 1 | -15 | -2 | -8 ||
 | 14 | 1 | 4 | 75 | 15 ||

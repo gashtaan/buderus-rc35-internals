@@ -325,7 +325,7 @@ Lower nibble bits mask which bits of upper nibble should enable/disable desired 
 | 21 | 1 | -9 | 9 | 0 ||
 | 22 | 1 | -9 | 9 | 0 ||
 | 23 | 1 | 0 | 65 | 47 ||
-| 24 | 1 | 30 | 90 | 40 ||
+| 24 | 1 | 30 | 90 | 40 | Flow temperature limit for drying cycle |
 | 25 | 1 | -1 | 0 | 0 ||
 | 26 | 1 | 30 | 90 | 60 ||
 ## Parameter table 15

@@ -148,22 +148,22 @@ Tables marked as **persistent** have their parameters (in addition to RAM) backe
 | 0 | 2 | KIM number |
 | 1 | 1 | KIM version |
 | 2 | 1 | Flags |
-| 3 | 1 | Boiler maximum output (kW) low byte  |
-| 4 | 1 | Boiler minimum output (%) |
-| 5 | 1 ||
+| 3 | 1 | Boiler power maximum (kW) low byte |
+| 4 | 1 | Boiler power minimum (%) |
+| 5 | 1 | Boiler power maximum |
 | 6 | 1 ||
 | 7 | 1 | Minimum ON temperature |
 | 8 | 1 ||
 | 9 | 1 ||
 | 10 | 1 ||
-| 11 | 1 | Boiler maximum output (kW) high byte |
+| 11 | 1 | Boiler power maximum (kW) high byte |
 | 12 | 1 ||
 | 13 | 1 | Flags |
 | 14 | 1 | Flags |
 | 15 | 1 ||
 | 16 | 1 ||
 | 17 | 2 ||
-| 18 | 1 | flags |
+| 18 | 1 | Flags |
 ## Parameter table 3
 | Index | Size | Description |
 |-------|------|-------------|
@@ -303,8 +303,8 @@ Lower nibble bits mask which bits of upper nibble should enable/disable desired 
 |-------|------|-----|-----|---------|-------------|
 | 0 | 1 | -1 | 0 | -1 | Heating active |
 | 1 | 1 | 30 | 90 | 90 | Max off temperature |
-| 2 | 1 | 0 | 100 | 100 | Boiler output maximum |
-| 3 | 1 | -1 | 0 | 0 | Boiler output minimum |
+| 2 | 1 | 0 | 100 | 100 | Boiler power maximum |
+| 3 | 1 | -1 | 0 | 0 | Limit boiler power maximum also to paremeter table 2/5 |
 | 4 | 1 | 2 | 15 | 6 | Switch-off hysteresis |
 | 5 | 1 | -15 | -2 | -6 | Switch-on hysteresis |
 | 6 | 1 | 0 | 60 | 10 | Burner off time |
